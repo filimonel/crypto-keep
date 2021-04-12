@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_12_113834) do
+ActiveRecord::Schema.define(version: 2021_04_12_115843) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,11 +18,20 @@ ActiveRecord::Schema.define(version: 2021_04_12_113834) do
   create_table "cryptos", force: :cascade do |t|
     t.string "name"
     t.float "price"
-    t.integer "market_cap"
     t.integer "volume"
+    t.integer "market_cap"
     t.integer "circulating_supply"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "portfolios", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "crypto_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["crypto_id"], name: "index_portfolios_on_crypto_id"
+    t.index ["user_id"], name: "index_portfolios_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -37,4 +46,6 @@ ActiveRecord::Schema.define(version: 2021_04_12_113834) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "portfolios", "cryptos"
+  add_foreign_key "portfolios", "users"
 end
