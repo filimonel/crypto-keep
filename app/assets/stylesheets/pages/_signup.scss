@@ -1,0 +1,18 @@
+.signup-wrapper {
+    width: 600px;
+    #user_email {
+        border-radius: 40px;
+    }
+    #user_password {
+        border-radius: 40px;
+    }
+    #user_password_confirmation {
+        border-radius: 40px;
+    }
+}
+
+#signup-button {
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
