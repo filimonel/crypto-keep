@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   
   resources :cryptos
-  resource :portfolio
+  resources :portfolios, only: [:show, :index]
   
   root to: 'pages#home'
   

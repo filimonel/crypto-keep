@@ -1,2 +1,8 @@
-<h1>Portfolios#index</h1>
-<p>Find me in app/views/portfolios/index.html.erb</p>
+<br>
+<h1> My Portfolio </h1>
+<br>
+ <% current_user.cryptos.each do |item| %>
+   <h3><%= item.name %></h3>
+   <h5><%= "$#{item.price}" %></h5>
+   <br>
+ <% end %>
