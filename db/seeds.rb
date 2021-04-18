@@ -36,10 +36,10 @@ filepath = File.join(__dir__, 'crypto.csv')
 
 CSV.open(filepath, "wb") do |csv|
 
-    csv << %w[name price volume market_cap circulating_supply]
+    csv << %w[cmc_rank name price volume_24h market_cap circulating_supply max_supply]
 
     response["data"].each do |crypto|
-      csv << [crypto["name"], crypto["quote"]["USD"]["price"], crypto["volume"], crypto["market_cap"], crypto["circulating_supply"]]
+      csv << [crypto["cmc_rank"], crypto["name"], crypto["quote"]["USD"]["price"], crypto["quote"]["USD"]["volume_24h"], crypto["quote"]["USD"]["market_cap"], crypto["circulating_supply"], crypto["max_supply"]]
     end
 
   end
