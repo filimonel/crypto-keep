@@ -16,11 +16,13 @@ ActiveRecord::Schema.define(version: 2021_04_12_115843) do
   enable_extension "plpgsql"
 
   create_table "cryptos", force: :cascade do |t|
+    t.integer "cmc_rank"
     t.string "name"
-    t.float "price"
-    t.integer "volume"
-    t.integer "market_cap"
-    t.integer "circulating_supply"
+    t.integer "price"
+    t.bigint "volume_24h"
+    t.bigint "market_cap"
+    t.bigint "circulating_supply"
+    t.bigint "max_supply"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
