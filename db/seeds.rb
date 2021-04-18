@@ -25,3 +25,10 @@ Portfolio.create!(user_id: 1, crypto_id: 3)
 Portfolio.create!(user_id: 2, crypto_id: 1)
 Portfolio.create!(user_id: 2, crypto_id: 3)
 Portfolio.create!(user_id: 2, crypto_id: 4)
+
+# API Crypto Scraper
+
+require "open-uri"
+require "httparty"
+
+response = https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY=CMCAPI
