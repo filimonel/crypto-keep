@@ -1,2 +1,19 @@
-<h1>Cryptos#edit</h1>
-<p>Find me in app/views/cryptos/edit.html.erb</p>
+<h1>Edit Crypto</h1>
+
+<%= form_for(@crypto) do |f| %>
+  <%= f.label :cmc_rank %>
+  <%= f.number_field :cmc_rank %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+  <%= f.label :volume_24h %>
+  <%= f.number_field :volume_24h %>
+  <%= f.label :market_cap %>
+  <%= f.number_field :market_cap %>
+  <%= f.label :circulating_supply %>
+  <%= f.number_field :circulating_supply %>
+  <%= f.label :max_supply %>
+  <%= f.number_field :max_supply %>
+  <%= f.submit %>
+<% end %>
