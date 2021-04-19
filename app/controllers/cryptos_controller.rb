@@ -22,6 +22,13 @@ class CryptosController < ApplicationController
   def edit
   end
 
+  def update
+    @crypto = Crypto.find(params[:id])
+    @crypto.update(crypto_params)
+
+    redirect_to crypto_path(@crypto)
+  end
+
   private
 
   def set_crypto
