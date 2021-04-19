@@ -35,7 +35,7 @@ CSV.foreach(filepath, csv_options) do |row|
         cmc_rank: row[:cmc_rank].to_i,
         name: row[:name],
         price: row[:price].to_i,
-        volume_24h: row[:volume_24h].to_i,
+        volume_24h: row[:volume_24h],
         market_cap: row[:market_cap].to_i,
         circulating_supply: row[:circulating_supply].to_i,
         max_supply: row[:max_supply].to_i
