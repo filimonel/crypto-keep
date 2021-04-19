@@ -1,5 +1,7 @@
-<h1>Cryptos#index</h1>
+<br>
+<h1>All Crypto</h1>
+<br>
 <% @cryptos.each do |crypto| %>
-    <h3><%= crypto.name %></h3>
-    <h3><%= crypto.price %></h3>
+    <h3><%= link_to crypto.name, crypto_path(crypto.id) %></h3>
+ 
 <% end %>
