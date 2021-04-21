@@ -5,7 +5,7 @@ namespace :user do
     users = User.all
     puts "Enqueuing update of #{users.size} users..."
     users.each do |user|
-      UpdateUserJob.perform_later(user)
+      UpdateUserJob.perform_later(user.id)
     end
     # rake task will return when all jobs are _enqueued_ (not done).
   end

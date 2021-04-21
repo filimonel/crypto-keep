@@ -1,5 +1,5 @@
 current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/sassc-2.4.0/ext
-/Users/filimonel/.rbenv/versions/2.6.6/bin/ruby -I /Users/filimonel/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210421-6130-266v62.rb extconf.rb
+/Users/filimonel/.rbenv/versions/2.6.6/bin/ruby -I /Users/filimonel/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210421-33053-esxn3o.rb extconf.rb
 creating Makefile
 
 current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/sassc-2.4.0/ext
@@ -77,4 +77,4 @@ linking shared-object sassc/libsass.bundle
 
 current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/sassc-2.4.0/ext
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20210421-6130-1w0yess/sassc
+/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20210421-33053-16j5gbh/sassc

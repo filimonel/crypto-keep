@@ -1,0 +1,15 @@
+current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/path/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+/Users/filimonel/.rbenv/versions/2.6.6/bin/ruby -I /Users/filimonel/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210421-29347-ceukee.rb extconf.rb
+creating Makefile
+
+current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/path/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/path/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/path/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20210421-29347-1ay6uy7

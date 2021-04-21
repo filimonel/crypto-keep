@@ -1,5 +1,5 @@
 current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/ffi-1.15.0/ext/ffi_c
-/Users/filimonel/.rbenv/versions/2.6.6/bin/ruby -I /Users/filimonel/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210421-6130-12icqyf.rb extconf.rb
+/Users/filimonel/.rbenv/versions/2.6.6/bin/ruby -I /Users/filimonel/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210421-33053-1ix3a93.rb extconf.rb
 checking for ffi_prep_closure_loc() in -lffi... yes
 checking for ffi_prep_cif_var()... yes
 checking for ffi_raw_call()... yes
@@ -39,4 +39,4 @@ linking shared-object ffi_c.bundle
 
 current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/ffi-1.15.0/ext/ffi_c
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20210421-6130-1qtjaxf
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20210421-33053-1gxoh05
