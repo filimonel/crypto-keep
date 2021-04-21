@@ -9,6 +9,7 @@
 # # Users
 User.create!(email: "fili@user.com", password: "password")
 User.create!(email: "sammy@user.com", password: "password")
+User.create!(email: "filimone.leaaetoa@gmail.com", password: "password", admin: true)
 
 # API Crypto Scraper
 

@@ -1,3 +1,4 @@
+# Option 3: Queue job via a rake task
 namespace :user do
   desc "Enriching all users with Clearbit (async)"
   task update_all: :environment do
