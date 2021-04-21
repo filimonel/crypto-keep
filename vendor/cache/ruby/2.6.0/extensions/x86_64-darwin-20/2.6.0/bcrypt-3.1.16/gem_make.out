@@ -1,5 +1,5 @@
 current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
-/Users/filimonel/.rbenv/versions/2.6.6/bin/ruby -I /Users/filimonel/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210421-33053-wd3q8r.rb extconf.rb
+/Users/filimonel/.rbenv/versions/2.6.6/bin/ruby -I /Users/filimonel/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210421-49524-uprg48.rb extconf.rb
 creating Makefile
 
 current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
@@ -36,4 +36,4 @@ linking shared-object bcrypt_ext.bundle
 
 current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/bcrypt-3.1.16/ext/mri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20210421-33053-hhma5g
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20210421-49524-1xhgagc
