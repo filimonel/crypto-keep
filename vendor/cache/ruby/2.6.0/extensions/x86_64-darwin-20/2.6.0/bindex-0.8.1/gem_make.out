@@ -1,0 +1,15 @@
+current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/filimonel/.rbenv/versions/2.6.6/bin/ruby -I /Users/filimonel/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210421-6130-14rk0ez.rb extconf.rb
+creating Makefile
+
+current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210421-6130-3vz88h/skiptrace/internal
