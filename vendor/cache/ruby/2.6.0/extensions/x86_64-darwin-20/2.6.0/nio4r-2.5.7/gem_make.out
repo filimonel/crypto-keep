@@ -1,5 +1,5 @@
 current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/nio4r-2.5.7/ext/nio4r
-/Users/filimonel/.rbenv/versions/2.6.6/bin/ruby -I /Users/filimonel/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210421-49524-9hj8zl.rb extconf.rb
+/Users/filimonel/.rbenv/versions/2.6.6/bin/ruby -I /Users/filimonel/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210421-60395-6ilrwf.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... no
 checking for linux/io_uring.h... no
@@ -93,4 +93,4 @@ linking shared-object nio4r_ext.bundle
 
 current directory: /Users/filimonel/Code/Projects/crypto-keep/crypto-keep/vendor/cache/ruby/2.6.0/gems/nio4r-2.5.7/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20210421-49524-18ef137
+/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20210421-60395-wfhsa8
