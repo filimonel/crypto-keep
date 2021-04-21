@@ -6,4 +6,10 @@ class User < ApplicationRecord
          
   has_many :portfolios, dependent: :destroy
   has_many :cryptos, through: :portfolios
+
+  private
+
+  def async_update
+    UpdateUserJob.perform_later(self.id)
+  end
 end
