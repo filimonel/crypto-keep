@@ -9,6 +9,7 @@ class User < ApplicationRecord
 
   private
 
+  # Option 1: Queue job from a model
   def async_update
     UpdateUserJob.perform_later(self.id)
   end
