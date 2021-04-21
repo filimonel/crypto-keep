@@ -15,6 +15,6 @@ class User < ApplicationRecord
   
   # Option 1: Queue job from a model
   def async_update
-    UpdateUserJob.perform_later(self.id)
+    UpdateUserJob.set(wait: 5.seconds).perform_later(self.id)
   end
 end
