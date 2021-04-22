@@ -16,7 +16,7 @@ namespace :user do
   task :update, [:user_id] => :environment do |t, args|
     user = User.find(args[:user_id])
     puts "Enriching #{user.email}..."
-    UpdateUserJob.set(wait: 5.seconds).perform_later(user.id)
+    UpdateUserJob.set(wait: 1.seconds).perform_later(user.id)
     # rake task will return when job is _done_
   end
 end

@@ -9,12 +9,12 @@ class User < ApplicationRecord
   has_many :portfolios, dependent: :destroy
   has_many :cryptos, through: :portfolios
 
-  after_commit :async_update # Run on create & update
+  # after_commit :async_update # Run on create & update
 
-  private
+  # private
   
-  # Option 1: Queue job from a model
-  def async_update
-    UpdateUserJob.set(wait: 5.seconds).perform_later(self.id)
-  end
+  # # Option 1: Queue job from a model
+  # def async_update
+  #   UpdateUserJob.set(wait: 5.seconds).perform_later(self.id)
+  # end
 end
