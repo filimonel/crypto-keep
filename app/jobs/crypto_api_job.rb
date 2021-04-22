@@ -8,6 +8,10 @@ class CryptoApiJob < ApplicationJob
 
   def perform()
 
+    Crypto.destroy_all
+    # Reset Crypto table id so that it starts from 1 again, crytpo showpage won't error because crypto id won't be reassigned to new id number.
+    Crypto.reset_pk_sequence
+
     response = HTTParty.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY=#{ENV['CMC_API_KEY']}")
 
     filepath = File.join(__dir__, 'crypto.csv')

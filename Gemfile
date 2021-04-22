@@ -62,6 +62,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
 # User Auth
 gem 'devise'
 
@@ -71,6 +72,8 @@ gem 'httparty'
 gem 'sidekiq'
 gem 'sidekiq-failures'
 
-# Improve code writing gems
-# gem 'rails_best_practices', '~> 1.20'
-# gem 'rubocop', require: false
+# Adds ability to reset table id back to 1. append '.reset_pk_sequence' to model.
+gem 'activerecord-reset-pk-sequence'
+
+# Action Mailer Development
+gem 'letter_opener', group: :development
