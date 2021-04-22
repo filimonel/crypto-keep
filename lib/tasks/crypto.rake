@@ -3,7 +3,7 @@ namespace :crypto do
   task update_all: :environment do
     puts "Updating crypto data..."
     CryptoApiJob.perform_later
-    # CryptoApiJob.set(wait: 10.seconds).perform_later
+    # CryptoInfoJob.perform_later
   end
 
 end

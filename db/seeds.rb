@@ -13,6 +13,7 @@ User.create!(email: "filimone.leaaetoa@gmail.com", password: "password", admin: 
 
 # Calling API Crypto Scraper.
 CryptoApiJob.perform_now
+# CryptoInfoJob.perform_later
 
 # Portfolio dummy data
 # Fili's default coins in portfolio
