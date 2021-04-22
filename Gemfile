@@ -71,6 +71,9 @@ gem 'httparty'
 gem 'sidekiq'
 gem 'sidekiq-failures'
 
+# Adds ability to reset table id back to 1. append '.reset_pk_sequence' to model.
+gem 'activerecord-reset-pk-sequence'
+
 # Improve code writing gems
 # gem 'rails_best_practices', '~> 1.20'
 # gem 'rubocop', require: false
