@@ -70,3 +70,7 @@ gem 'httparty'
 # Background jobs
 gem 'sidekiq'
 gem 'sidekiq-failures'
+
+# Improve code writing gems
+# gem 'rails_best_practices', '~> 1.20'
+# gem 'rubocop', require: false
