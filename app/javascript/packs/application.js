@@ -3,14 +3,10 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-import Rails from "@rails/ujs";
-import Turbolinks from "turbolinks";
-import * as ActiveStorage from "@rails/activestorage";
-import "channels";
-
-Rails.start();
-Turbolinks.start();
-ActiveStorage.start();
+// require("@rails/ujs").start();
+require("turbolinks").start();
+require("@rails/activestorage").start();
+require("channels");
 
 // ----------------------------------------------------
 // Note(lewagon): ABOVE IS RAILS DEFAULT CONFIGURATION
@@ -21,7 +17,7 @@ ActiveStorage.start();
 import "bootstrap";
 
 // Internal imports
-import { cryptoUpdate } from "../plugins/init_crypto";
+import { cryptoUpdate } from "../plugins/crypto_update";
 
 document.addEventListener("turbolinks:load", () => {
   cryptoUpdate();

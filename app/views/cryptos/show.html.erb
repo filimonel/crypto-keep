@@ -1,5 +1,7 @@
 <div id="crypto-show-wrapper">
+    <div id="header-show">
     <h1><%= @crypto.name %></h1>
+    </div>
     <br>
     <h5>Rank: <%= @crypto.cmc_rank %></h5>
     <h5>Price: <%= "$#{@crypto.price}" %></h5>
@@ -7,7 +9,7 @@
     <h5>Circulating Supply: <%= @crypto.circulating_supply %></h5>
     <h5>Max Supply: <%= @crypto.max_supply %></h5>
     <br>
-    <%= link_to "Back", cryptos_path %>
+    <%= link_to "Back", cryptos_path, id: "back-btn" %>
     <%= link_to "Edit", edit_crypto_path(@crypto) %>
     <%= link_to "Delete" , crypto_path(@crypto), method: :delete,
                 data: { confirm: "Are you sure?" } %>

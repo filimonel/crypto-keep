@@ -1,7 +1,8 @@
-const crypto = document.querySelector("#crypto-show-wrapper");
+const crypto = document.querySelector("#header-show");
 
 const cryptoUpdate = () => {
-  crypto.addEventListener("load", (event) => {
+  crypto.addEventListener("mouseover", (event) => {
+    console.log("works");
     setTimeout(function () {
       window.location = window.location;
     }, 5000);
