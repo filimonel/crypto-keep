@@ -1,11 +1,11 @@
 <div id="crypto-show-wrapper">
     <h1><%= @crypto.name %></h1>
     <br>
-    <h5 id="cmc-rank">Yo</h5>
-    <h5 id="crypto-price"></h5>
-    <h5 id="market-cap"></h5>
-    <h5 id="circ-supply"></h5>
-    <h5 id="max-supply"></h5>
+    <h5 id="cmc-rank">Rank: <%= @crypto.cmc_rank %></h5>
+    <h5 id="crypto-price">Price: <%= "$#{@crypto.price}" %></h5>
+    <h5 id="market-cap">Market Cap: <%= @crypto.market_cap %></h5>
+    <h5 id="circ-supply">Circulating Supply: <%= @crypto.circulating_supply %></h5>
+    <h5 id="max-supply">Max Supply: <%= @crypto.max_supply %></h5>
     <br>
     <%= link_to "Back", cryptos_path, id: "back-btn" %>
     <%= link_to "Edit", edit_crypto_path(@crypto) %>
