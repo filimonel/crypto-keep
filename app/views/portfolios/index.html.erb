@@ -1,11 +1,14 @@
 <br>
 <h1> My Portfolio </h1>
 <br>
- <% current_user.cryptos.each do |item| %>
+
+<% current_user.cryptos.each do |item| %>
+  <div class="portfolio-crypto-wrapper">
    <h3><%= item.name %></h3>
    <h5>Price: <%= "$#{item.price}" %></h5>
    <h5>Market Cap: <%= "$#{item.market_cap}" %></h5>
    <h5>Circulating Supply: <%= "#{item.circulating_supply}" %></h5>
    <h5>Max Supply: <%= "#{item.max_supply}" %></h5>
    <br>
- <% end %>
+  <% end %>
+</div>
