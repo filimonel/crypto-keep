@@ -5,13 +5,9 @@ const circSupply = document.querySelector("#circ-supply");
 const maxSupply = document.querySelector("#max-supply");
 
 const cryptoUpdate = () => {
-  cmcRank.addEventListener(
-    "click",
-    () => {
-      cmcRank.innerHTML = "hey";
-    },
-    5000
-  );
+  cmcRank.addEventListener("click", () => {
+    cmcRank.innerHTML = "hey";
+  });
 };
 
 export { cryptoUpdate };
