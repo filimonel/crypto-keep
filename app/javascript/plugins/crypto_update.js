@@ -1,12 +1,17 @@
-const crypto = document.querySelector("#header-show");
+const cmcRank = document.querySelector("#cmc-rank");
+const cryptoPrice = document.querySelector("#crypto-price");
+const marketCap = document.querySelector("#market-cap");
+const circSupply = document.querySelector("#circ-supply");
+const maxSupply = document.querySelector("#max-supply");
 
 const cryptoUpdate = () => {
-  crypto.addEventListener("mouseover", (event) => {
-    console.log("works");
-    setTimeout(function () {
-      window.location = window.location;
-    }, 5000);
-  });
+  cmcRank.addEventListener(
+    "click",
+    () => {
+      cmcRank.innerHTML = "hey";
+    },
+    5000
+  );
 };
 
 export { cryptoUpdate };
