@@ -2,14 +2,16 @@
 <h1> My Portfolio </h1>
 <br>
 <div id="crypto-show-wrapper">
-<% current_user.cryptos.each do |item| %>
+<% current_user.cryptos.each do |crypto| %>
   <div class="portfolio-crypto-card">
-   <h3><%= item.name %></h3>
-   <h5>Price: <%= "$#{item.price}" %></h5>
-   <h5>Market Cap: <%= "$#{item.market_cap}" %></h5>
-   <h5>Circulating Supply: <%= "#{item.circulating_supply}" %></h5>
-   <h5>Max Supply: <%= "#{item.max_supply}" %></h5>
-   <br>
+   <h3><%= crypto.name %></h3>
+   <h5>Price: <%= "$#{crypto.price}" %></h5>
+   <h5>Market Cap: <%= "$#{crypto.market_cap}" %></h5>
+   <h5>Circulating Supply: <%= "#{crypto.circulating_supply}" %></h5>
+   <h5>Max Supply: <%= "#{crypto.max_supply}" %></h5>
+   <%= link_to "Details", crypto_path(crypto.id) %>
+   <%= link_to "Delete" , crypto_path(crypto.id), method: :delete,
+                data: { confirm: "Are you sure?" } %>
    </div>
   <% end %>
 
