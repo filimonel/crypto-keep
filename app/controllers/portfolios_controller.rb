@@ -1,14 +1,16 @@
 class PortfoliosController < ApplicationController
 
   def index
-    @crypto = current_user.cryptos.all
-   
   end
 
   def show
   end
 
-  def destory
+  def destroy
+    @portfolio = Portfolio.find(params[:id])
+    @portfolio.destroy
+
+    redirect_to portfolios_path
   end
 
 end
