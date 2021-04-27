@@ -58,6 +58,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  # BDD/TDD
+  gem 'rspec', '~> 3.5'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -78,5 +80,3 @@ gem 'activerecord-reset-pk-sequence'
 # Action Mailer Development
 gem 'letter_opener', group: :development
 
-# BDD/TDD
-gem 'rspec', '~> 3.5'
