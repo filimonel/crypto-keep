@@ -77,3 +77,6 @@ gem 'activerecord-reset-pk-sequence'
 
 # Action Mailer Development
 gem 'letter_opener', group: :development
+
+# BDD/TDD
+gem 'rspec', '~> 3.5'
