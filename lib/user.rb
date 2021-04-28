@@ -1,5 +1,5 @@
 class User
-    def self.count
-        current_user.cryptos.count
+    def self.count()
+        
     end
 end
