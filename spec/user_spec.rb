@@ -9,13 +9,7 @@ describe User do
             end
         end
 
-        # context "#user_count" do
-        #     it "should return crypto count" do
-
-
-        #         expect(UserCryptoCount.count()).to eq(count)
-        #     end
-        # end
+        
     end
 
 end
